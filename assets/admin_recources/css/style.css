@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
+.login form input, .form .form-group input,
+.form .form-group textarea,
+.form .form-group select {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #ecf0f1;
+  background: white;
+}
+
+.login form button, .form .form-group button, .list .header a, .list .items .item a, .list .items .item form button {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  margin: 0 -15px;
+}
+
+body {
+  background-color: #ecf0f1;
+}
+
+.login form {
+  margin-top: 150px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.login form .form-group {
+  margin-bottom: 15px;
+}
+
+.login form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login form .error-text {
+  color: #e74c3c;
+}
+
+header {
+  background-color: #01a3a4;
+  padding: 30px 0;
+}
+
+header .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+header .content .logo {
+  color: white;
+  font-weight: bold;
+}
+
+header .content ul {
+  margin-right: 15px;
+}
+
+header .content ul li {
+  display: inline-block;
+}
+
+header .content ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.form {
+  background: white;
+  margin: 50px 0;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.form h2 {
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.form .form-group {
+  margin-bottom: 15px;
+}
+
+.form .form-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.list {
+  margin: 50px 0;
+}
+
+.list .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.list .header h2 {
+  color: #2c3e50;
+}
+
+.list .header a {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.list .items .item {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.list .items .item a {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.list .items .item form {
+  display: inline-block;
+}
+
+.list .items .item form button {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap");
+header .button-container button {
+  padding: 11px 25px;
+  border: 1px solid #FF5300;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #FF5300;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  margin: 0 -15px;
+}
+
+header {
+  padding: 45px 15px;
+  background: #f6f7f8;
+}
+
+header .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .logo {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #222222;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: #222222;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin: 0 17px;
+}
+
+header nav ul li a.active {
+  color: #FF5300;
+  border-bottom: 1px solid #FF5300;
+}
+
+header nav ul li a:hover {
+  color: #FF5300;
+  border-bottom: 1px solid #FF5300;
+}
+
+header .button-container button {
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .button-container button svg {
+  margin-right: 5px;
+  width: 15px;
+  fill: #FF5300;
+}
+
+header .button-container button:hover {
+  background-color: #FF5300;
+  color: #fff;
+  cursor: pointer;
+}
+
+header .button-container button:hover svg {
+  fill: #fff;
+}
+
+#intro {
+  background: #f6f7f8;
+}
+
+#intro .intro-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#intro .intro-content .content {
+  margin-top: 140px;
+  padding-right: 150px;
+}
+
+#intro .intro-content .content span {
+  color: #FF5300;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 20px;
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+}
+
+#intro .intro-content .content span:before {
+  content: '';
+  position: absolute;
+  background-color: #FF5300;
+  width: 25px;
+  height: 1px;
+  left: 0;
+  top: 37%;
+}
+
+#intro .intro-content .content h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 52px;
+  color: #222222;
+  margin-bottom: 25px;
+}
+
+#intro .intro-content .content p {
+  color: #555555;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#intro .intro-content .img img {
+  width: 550px;
+}
+
+footer {
+  background-color: #FF5300;
+  padding: 15px 0;
+  text-align: center;
+}
+
+footer .copyright {
+  color: white;
+  font-size: 16px;
+}
+
+.row-box {
+  width: 100%;
+  height: 2px;
+  background-color: #FF5300;
+}
+
+.categories-page {
+  margin: 50px 0;
+}
+
+.categories-page .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.categories-page .content .item {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 45%;
+          flex: 1 0 45%;
+  margin: 15px;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0px 0px 9px 6px rgba(227, 227, 227, 0.53);
+  -webkit-box-shadow: 0px 0px 9px 6px rgba(227, 227, 227, 0.53);
+  -moz-box-shadow: 0px 0px 9px 6px rgba(227, 227, 227, 0.53);
+}
+
+.categories-page .content .item a {
+  color: #FF5300;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  padding: 30px;
+}
+
+.news-page {
+  margin: 50px 0;
+}
+
+.news-page .news-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.news-page .news-items .item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+  width: 30%;
+  margin: 15px;
+}
+
+.news-page .news-items .item .img {
+  padding-top: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.news-page .news-items .item .content h2 {
+  margin: 15px 0;
+  color: #FF5300;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.news-page .news-items .item .content p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.news-page .news-items .item .content a {
+  text-decoration: none;
+  background-color: #FF5300;
+  padding: 5px 15px;
+  display: inline-block;
+  color: white;
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.about-page {
+  margin: 50px 0;
+}
+
+.about-page h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  color: #FF5300;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-page p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+#main {
+  margin-top: 50px;
+}
+
+#main .about {
+  margin-bottom: 50px;
+}
+
+#main .about h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  color: #FF5300;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#main .about p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+#main .about p a {
+  color: #FF5300;
+}
+
+#main .categories {
+  margin: 100px 0;
+}
+
+#main .categories .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main .categories .content .item {
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0px 0px 9px 6px rgba(227, 227, 227, 0.53);
+  -webkit-box-shadow: 0px 0px 9px 6px rgba(227, 227, 227, 0.53);
+  -moz-box-shadow: 0px 0px 9px 6px rgba(227, 227, 227, 0.53);
+}
+
+#main .categories .content .item a {
+  color: #FF5300;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  padding: 25px 30px;
+}
+
+#main .news {
+  margin-bottom: 100px;
+}
+
+#main .news .header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#main .news .header h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  color: #FF5300;
+}
+
+#main .news .header a {
+  color: #555555;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+#main .news .news-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main .news .news-items .item {
+  width: 30%;
+}
+
+#main .news .news-items .item .img {
+  padding-top: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+}
+
+#main .news .news-items .item .content h2 {
+  margin: 15px 0;
+  color: #FF5300;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+#main .news .news-items .item .content p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+#main .news .news-items .item .content a {
+  text-decoration: none;
+  background-color: #FF5300;
+  padding: 5px 15px;
+  display: inline-block;
+  color: white;
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+/*# sourceMappingURL=style.css.map */
