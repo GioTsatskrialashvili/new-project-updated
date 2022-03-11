@@ -173,7 +173,47 @@ footer{
 
 .news-page{
     margin: 50px 0;
+    .row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .filter{
+        width: 30%;
+        .filter-box{
+            border: 1px solid #ff530059;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            div{
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+                input[type="checkbox"]{
+                    margin-right: 5px;
+                }
+            }
+            input[type="text"]{
+                width: 100%;
+                padding: 10px 15px;
+                border-radius: 10px;
+                border: 1px solid #ecf0f1;
+                background: white;
+            }
+            
+        }
+        .filter-box-button{
+            text-align: center;
+            button{
+                @extend %button-seconday;
+                border: 1px solid #ff530059;
+                width: 100%;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+        }
+    }
     .news-items{
+        width: 70%;
         display: flex;
         flex-wrap: wrap;
         .item{

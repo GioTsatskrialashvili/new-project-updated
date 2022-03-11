@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap");
-header .button-container button {
+header .button-container button, .news-page .filter .filter-box-button button {
   padding: 11px 25px;
   border: 1px solid #FF5300;
   border-radius: 3px;
@@ -214,7 +214,61 @@ footer .copyright {
   margin: 50px 0;
 }
 
+.news-page .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.news-page .filter {
+  width: 30%;
+}
+
+.news-page .filter .filter-box {
+  border: 1px solid #ff530059;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.news-page .filter .filter-box div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5px;
+}
+
+.news-page .filter .filter-box div input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.news-page .filter .filter-box input[type="text"] {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #ecf0f1;
+  background: white;
+}
+
+.news-page .filter .filter-box-button {
+  text-align: center;
+}
+
+.news-page .filter .filter-box-button button {
+  border: 1px solid #ff530059;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
 .news-page .news-items {
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -7,6 +7,9 @@
                         <a href="?type=admin">Dashboard</a>
                     </li>
                     <li>
+                        <a href="?type=admin&page=main">Main</a>
+                    </li>
+                    <li>
                         <a href="?type=admin&page=about">About</a>
                     </li>
                     <li>

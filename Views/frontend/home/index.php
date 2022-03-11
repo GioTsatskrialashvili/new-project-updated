@@ -6,13 +6,13 @@
 
                 <div class="intro-content">
                     <div class="content">
-                        <span>Trending Episode</span>
-                        <h1>Dreams of an unique ideas scattered through a</h1>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                        <span><?= $data['main']['title']?></span>
+                        <h1><?= $data['main']['header']?></h1>
+                        <p><?= $data['main']['text']?></p>
                     </div>
 
                     <div class="img">
-                        <img src="assets/img/main-img.png" alt="">
+                        <img src="<?= $data['main']['image']?>" alt="">
                     </div>
                 </div>
 
@@ -51,37 +51,27 @@
     <section class="news">
         <div class="container">
             <div class="row">
+                <div class="header">
+                    <h2>Latest News</h2>
+                    <a href="?page=news">View All</a>
+                </div>
                 <div class="news-items">
+                    <?php foreach($data['news'] as $value):?>
                     <div class="item">
-                        <div class="img" style="background-image: url('https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg')"></div>
+                        <div class="img" style="background-image: url('<?=$value['image']?>')"></div>
                         <div class="content">
-                            <h2>News 1</h2>
+                            <h2><?=$value['title']?></h2>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <?=$value['short_text']?>
                             </p>
                             <a href="">View</a>
                         </div>
+                    
+                    
+                    
                     </div>
-                    <div class="item">
-                        <div class="img" style="background-image: url('https://www.onceuponapicture.co.uk/wp-content/uploads/2019/02/46456227_2504829799542273_7554593422053474304_o-700x525.jpg')"></div>
-                        <div class="content">
-                            <h2>News 1</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <a href="">View</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="img" style="background-image: url('https://www.onceuponapicture.co.uk/wp-content/uploads/2019/01/Daniele-Bianchin-above-the-sky-700x394.png')"></div>
-                        <div class="content">
-                            <h2>News 1</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <a href="">View</a>
-                        </div>
-                    </div>
+                    <?php endforeach;?>
+                   
                 </div>
             </div>
         </div>
