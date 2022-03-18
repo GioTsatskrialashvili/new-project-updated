@@ -18,8 +18,9 @@
                         <td><?= $value['title'] ?></td>
                         <td><?= $value['short_text'] ?></td>
                         <td class="action">
-                            <a href="">edit</a>
-                            <form action="">
+                            <a href="?type=admin&page=news&action=edit&id=<?= $value['id']?>">edit</a>
+                            <form action="?type=admin&page=news&action=delete"onsubmit="return checkDelete()" method="post">
+                                <input type="hidden" name="id"value="<?= $value['id']?>">
                                 <button>delete</button>
                             </form>
                         </td>

@@ -40,7 +40,7 @@
                 <div class="content">
                     <?php foreach($data['categories'] as $value): ?>
                         <div class="item">
-                            <a href=""><?= $value['title'] ?></a>
+                            <a href="?page=news&category=<?= $value['id'] ?>"><?= $value['title'] ?></a>
                         </div>
                     <?php endforeach; ?>
                 </div>
@@ -64,7 +64,7 @@
                             <p>
                             <?=$value['short_text']?>
                             </p>
-                            <a href="">View</a>
+                            <a href="?page=news&action=view&id=<?=$value['id']?>">View</a>
                         </div>
                     
                     

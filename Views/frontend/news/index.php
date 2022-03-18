@@ -2,26 +2,27 @@
     <div class="container">
         <div class="row">
             <div class="filter">
-                <div class="filter-box">
-                    <input type="text" placeholder="Search...">
-                </div>
-                <div class="filter-box">
-                    <div>
-                        <input type="checkbox">
-                        <label for="">კატეგირია 1</label>
-                    </div>
-                    <div>
-                        <input type="checkbox">
-                        <label for="">კატეგირია 1</label>
-                    </div>
-                    <div>
-                        <input type="checkbox">
-                        <label for="">კატეგირია 1</label>
-                    </div>
-                </div>
-                <div class="filter-box-button">
-                    <button>Search</button>
-                </div>
+               <form action="">
+                   <input type="hidden" name="page" value="news">
+                    <div class="filter-box">
+                            <input type="text" name="keyword" placeholder="Search..." value=<?= $data['keyword'] ? $data['keyword']:''?>>
+                        </div>
+                        <div class="filter-box">
+                            <?php foreach($data['categories'] as $value):?>
+                            <div>
+                                <input type="radio" 
+                                 value="<?= $value['id']?>"
+                                  name="category"
+                                  <?= $data['categoryId']&& $data['categoryId']==$value['id']?'checked':''?>>
+                                <label for=""><?= $value['title']?></label>
+                            </div>
+                            <?php endforeach;?>
+                        
+                        </div>
+                        <div class="filter-box-button">
+                            <button>Search</button>
+                        </div>
+               </form>
             </div>
             <div class="news-items">
                 <?php foreach($data['news'] as $value): ?>
@@ -32,7 +33,7 @@
                             <p>
                                 <?= $value['short_text'] ?>
                             </p>
-                            <a href="">View</a>
+                            <a href="?page=news&action=view&id=<?=$value['id']?>">View</a>
                         </div>
                     </div>
                 <?php endforeach; ?>
