@@ -25,19 +25,25 @@
                </form>
             </div>
             <div class="news-items">
-                <?php foreach($data['news'] as $value): ?>
-                    <div class="item">
-                        <div class="img" style="background-image: url('<?= $value['image'] ?>')"></div>
-                        <div class="content">
-                            <h2><?= $value['title'] ?></h2>
-                            <p>
-                                <?= $value['short_text'] ?>
-                            </p>
-                            <a href="?page=news&action=view&id=<?=$value['id']?>">View</a>
+                <div class="news-items-box">
+                    <?php foreach($data['news'] as $value): ?>
+                        <div class="item">
+                            <div class="img" style="background-image: url('<?= $value['image'] ?>')"></div>
+                            <div class="content">
+                                <h2><?= $value['title'] ?></h2>
+                                <p>
+                                    <?= $value['short_text'] ?>
+                                </p>
+                                <a href="?page=news&action=view&id=<?= $value['id'] ?>">View</a>
+                            </div>
                         </div>
-                    </div>
-                <?php endforeach; ?>
-            </div>
+                    <?php endforeach; ?>
+                </div>
+            
+               
+            
+                <?= $data['paging']?>
         </div>
-    </div>
+    
+    
 </section>

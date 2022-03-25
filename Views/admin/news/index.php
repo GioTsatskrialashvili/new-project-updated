@@ -26,7 +26,10 @@
                         </td>
                     </tr>
                 <?php endforeach; ?>
+
+               
             </table>
+            <?= $data['paging']?>
         </div>
     </div>
 </div>

@@ -270,6 +270,9 @@ footer .copyright {
 
 .news-page .news-items {
   width: 70%;
+}
+
+.news-page .news-items .news-items-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,7 +280,7 @@ footer .copyright {
       flex-wrap: wrap;
 }
 
-.news-page .news-items .item {
+.news-page .news-items .news-items-box .item {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 30%;
           flex: 1 0 30%;
@@ -285,7 +288,7 @@ footer .copyright {
   margin: 15px;
 }
 
-.news-page .news-items .item .img {
+.news-page .news-items .news-items-box .item .img {
   padding-top: 250px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -293,7 +296,7 @@ footer .copyright {
   border-radius: 5px;
 }
 
-.news-page .news-items .item .content h2 {
+.news-page .news-items .news-items-box .item .content h2 {
   margin: 15px 0;
   color: #FF5300;
   font-family: "Josefin Sans", sans-serif;
@@ -301,14 +304,14 @@ footer .copyright {
   font-size: 22px;
 }
 
-.news-page .news-items .item .content p {
+.news-page .news-items .news-items-box .item .content p {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 15px;
 }
 
-.news-page .news-items .item .content a {
+.news-page .news-items .news-items-box .item .content a {
   text-decoration: none;
   background-color: #FF5300;
   padding: 5px 15px;
@@ -504,5 +507,19 @@ footer .copyright {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
+}
+
+.paging {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.paging a {
+  text-decoration: none;
+  color: #FF5300;
+}
+
+.paging a.active {
+  color: #555555;
 }
 /*# sourceMappingURL=style.css.map */

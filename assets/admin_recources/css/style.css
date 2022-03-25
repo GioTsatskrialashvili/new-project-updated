@@ -208,4 +208,18 @@ header .content ul li a {
 .list th, .list td {
   padding: 15px;
 }
+
+.paging {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.paging a {
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+.paging a.active {
+  color: #e74c3c;
+}
 /*# sourceMappingURL=style.css.map */
