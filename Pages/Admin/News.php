@@ -21,7 +21,7 @@ class News extends Page {
         $offset=($page * $limit)-$limit;
 
         $cnt= $this->newsModel->getCount();
-         
+        
         $this->data['page']=$page;
         $this->data['limit']=$limit;
         $this->data['cnt']=$cnt['cnt'];

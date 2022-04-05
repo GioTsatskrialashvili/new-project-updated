@@ -22,10 +22,11 @@ class News extends Page{
         $offset=($page * $limit)-$limit;
 
         $cnt= $this->newsModel->getFilteredCnt($categoryId, $keyword);
+        $link= '?page=news'. ($keyword?'&keyword='.$keyword:'').($categoryId ?'&category='.$categoryId :'');
         $this->data['page']=$page;
         $this->data['limit']=$limit;
         $this->data['cnt']=$cnt['cnt'];
-        $this->data['paging']=Paging::execute($cnt['cnt'],$limit,$page,'?page=news');
+        $this->data['paging']=Paging::execute($cnt['cnt'],$limit,$page,$link);
         $this->data['news']=$this->newsModel->getFiltered($categoryId, $keyword,$offset,$limit);
         
         $this->data['categories']=$this->categoriesModel->getAll();

@@ -1,4 +1,7 @@
 <?php
+require 'Libs/PHPMailer/src/Exception.php';
+require 'Libs/PHPMailer/src/PHPMailer.php';
+require 'Libs/PHPMailer/src/SMTP.php';
 
  include 'Helpers/Session.php';
  include 'Helpers/Paging.php';

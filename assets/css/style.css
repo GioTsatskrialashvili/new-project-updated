@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap");
+.contact-page form .form-group button {
+  padding: 11px 25px;
+  border: none;
+  border-radius: 3px;
+  background-color: #FF5300;
+  color: #fff;
+}
+
 header .button-container button, .news-page .filter .filter-box-button button {
   padding: 11px 25px;
   border: 1px solid #FF5300;
@@ -521,5 +529,54 @@ footer .copyright {
 
 .paging a.active {
   color: #555555;
+}
+
+.contact-page h2 {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 23px;
+  margin-bottom: 30px;
+}
+
+.contact-page form {
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.contact-page form .msg {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-page form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-page form .form-group label {
+  display: block;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.contact-page form .form-group input,
+.contact-page form .form-group textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #ecf0f1;
+  background: white;
+}
+
+.contact-page form .form-group textarea {
+  height: 200px;
+}
+
+.contact-page form .form-group.error input, .contact-page form .form-group.error textarea {
+  border: 1px solid red;
 }
 /*# sourceMappingURL=style.css.map */
